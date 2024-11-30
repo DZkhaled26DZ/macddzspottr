@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محلل العملات الرقمية - MACD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 محلل العملات الرقمية - MACD</h1>
+            <div class="controls">
+                <button id="startBtn" class="btn start">▶️ بدء التحليل</button>
+                <button id="refreshBtn" class="btn refresh">🔄 تحديث</button>
+                <div class="sound-control">
+                    <label for="soundToggle">🔔 التنبيهات الصوتية</label>
+                    <input type="checkbox" id="soundToggle">
+                </div>
+            </div>
+        </header>
+
+        <div class="table-container">
+            <table id="resultsTable">
+                <thead>
+                    <tr>
+                        <th data-sort="symbol">العملة 📊</th>
+                        <th data-sort="price">السعر الحالي 💰</th>
+                        <th data-sort="volume">حجم التداول 📈</th>
+                        <th data-sort="trend">الاتجاه 🎯</th>
+                        <th data-sort="timestamp">وقت الإشارة ⏰</th>
+                        <th>الأهداف المتوقعة 🎯</th>
+                        <th>وقف الخسارة ⛔</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            جاري التحليل... ⏳
+        </div>
+
+        <footer>
+            <p>جميع الحقوق محفوظة © 2024 - خالد دراغة</p>
+            <p>للتواصل: gsmkhaledtiaret@gmail.com</p>
+        </footer>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
